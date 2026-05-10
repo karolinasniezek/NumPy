@@ -19,6 +19,7 @@ def plot_3d(data: list) -> bool:
     fig = plt.figure()
     ax = fig.add_subplot(111, projection="3d")
     ax.scatter3D(*data)
+    plt.savefig("images/3d_scatter.png")
     plt.show()
     return True
 
